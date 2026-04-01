@@ -635,7 +635,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
-.social-links-box { margin-top: 2rem; }
+.social-links-box { 
+    margin-top: 2rem; 
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 
 .btn-linkedin {
     background: #0077b5;
@@ -647,6 +652,18 @@ h1, h2, h3, h4, h5, h6 {
     background: #008cd6;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);
+}
+
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    box-shadow: 0 5px 15px rgba(220, 39, 67, 0.3);
+}
+
+.btn-instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(220, 39, 67, 0.4);
 }
 
 .contact-form {
