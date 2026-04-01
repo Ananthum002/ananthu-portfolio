@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananthu Mohan | Cloud Engineer</title>
+    <meta name="description" content="Portfolio of Ananthu Mohan, Cloud Engineer specializing in Cloud Infrastructure, Automation, and AI-enabled solutions.">
+    
+    <!-- Google Fonts: Inter/Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Dynamic Background -->
+    <div class="cloud-bg">
+        <div class="grid-layer"></div>
+        <div class="glow-orb top-left"></div>
+        <div class="glow-orb bottom-right"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">AM<span>.Cloud</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="hero-content reveal">
+            <div class="terminal-badge">> SYSTEM.STATUS: ONLINE</div>
+            <h1 class="title">Ananthu Mohan <br><span class="highlight">| Cloud Engineer</span></h1>
+            <p class="description">
+                Motivated MCA student specializing in Cloud Infrastructure, Automation, and AI-enabled solutions.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual reveal right">
+            <!-- Simulated Server Rack / Server Animation -->
+            <div class="server-rack">
+                <div class="server-unit active">
+                    <div class="led pulse"></div><span>AWS_CORE_01</span><div class="load-bar"><div class="fill" style="width:75%"></div></div>
+                </div>
+                <div class="server-unit">
+                    <div class="led pulse slow"></div><span>DB_MYSQL_M</span><div class="load-bar"><div class="fill" style="width:40%"></div></div>
+                </div>
+                <div class="server-unit active">
+                    <div class="led pulse fast"></div><span>AI_NODE_02</span><div class="load-bar"><div class="fill" style="width:90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text glass-card reveal fade-up">
+                    <i class="fas fa-user-graduate float-icon"></i>
+                    <p>I am currently pursuing a <strong>Master of Computer Applications (MCA)</strong> at CHMM College for Advanced Studies (2024-2026). My goal is to build robust, scalable architectures and automate complex deployments.</p>
+                    <p>My foundational expertise lies in working closely with <strong>AWS cloud services</strong>, navigating and scripting within <strong>Linux environments</strong>, and writing efficient automation and logic in <strong>Python</strong>. I thrive in the intersection of operations and development, ensuring highly available systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Toolkit Section -->
+    <section id="toolkit" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Technical <span class="highlight">Toolkit</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Category 1 -->
+                <div class="skill-category reveal fade-up glass-card">
+                    <div class="category-header">
+                        <i class="fab fa-aws icon-blue"></i>
+                        <h3>Cloud</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span><i class="fas fa-check-circle"></i> AWS Services</span></li>
+                        <li><span><i class="fas fa-check-circle"></i> Cloud Fundamentals</span></li>
+                        <li><span><i class="fas fa-check-circle"></i> CI/CD Pipelines</span></li>
+                    </ul>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-category reveal fade-up glass-card" style="transition-delay: 0.1s;">
+                    <div class="category-header">
+                        <i class="fab fa-linux icon-grey"></i>
+                        <h3>OS & Scripting</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span><i class="fas fa-check-circle"></i> Linux</span></li>
+                        <li><span><i class="fas fa-check-circle"></i> Python</span></li>
+                        <li><span><i class="fas fa-check-circle"></i> Shell Scripting</span></li>
+                    </ul>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-category reveal fade-up glass-card" style="transition-delay: 0.2s;">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired icon-blue"></i>
+                        <h3>Networking & Data</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span><i class="fas fa-check-circle"></i> DNS Configuration</span></li>
+                        <li><span><i class="fas fa-check-circle"></i> HTTP/HTTPS</span></li>
+                        <li><span><i class="fas fa-check-circle"></i> MySQL Database</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal fade-up glass-card">
+                    <div class="project-header">
+                        <i class="fas fa-shield-alt project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="view-btn" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Steganography System</h3>
+                        <p>An application engineered for securely embedding confidential data within digital images, ensuring secure communication and data stealth capabilities.</p>
+                        <div class="tech-stack">
+                            <span>Data Security</span>
+                            <span>Cryptography</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card reveal fade-up glass-card" style="transition-delay: 0.1s;">
+                    <div class="project-header">
+                        <i class="fas fa-tractor project-icon"></i>
+                        <div class="project-links">
+                            <a href="#" class="view-btn" title="View Project"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="view-btn" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>C-Farm Manager</h3>
+                        <p>An Android-based application designed for comprehensive management of cattle records, tracking health data, and monitoring daily milk production yields.</p>
+                        <div class="tech-stack">
+                            <span>Android</span>
+                            <span>Mobile App</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Let's <span class="highlight">Connect</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-content reveal fade-up single-column">
+                
+                <div class="contact-info glass-card">
+                    <h3>Contact Details</h3>
+                    <p>I am open to opportunities in Cloud Engineering, Infrastructure, and Automation. Reach out if you'd like to build something scalable!</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span>Email</span>
+                                <strong><a href="mailto:ananthumohan112002@gmail.com" class="email-link">ananthumohan112002@gmail.com</a></strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span>Location</span>
+                                <strong>Kollam, Kerala</strong>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="social-links-box">
+                        <a href="https://www.linkedin.com/in/ananthu-mohan-a12619388" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="logo">AM<span>.Cloud</span></a>
+                <p>&copy; 2026 Ananthu Mohan. Built with modern web technologies.</p>
+                <div class="back-to-top">
+                    <a href="#home"><i class="fas fa-chevron-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
