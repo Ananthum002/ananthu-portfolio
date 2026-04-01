@@ -75,7 +75,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Contact Form Handling
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
 
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simple validation and success simulation
+            const btn = contactForm.querySelector('button');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                formStatus.innerHTML = '<span class="status-success"><i class="fas fa-check-circle"></i> Message sent successfully! I will get back to you soon.</span>';
+                contactForm.reset();
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                
+                setTimeout(() => {
+                    formStatus.innerHTML = '';
+                }, 5000);
+            }, 1500);
+        });
+    }
 
     // Dynamic Server Load Bars Animation
     const loadBars = document.querySelectorAll('.load-bar .fill');

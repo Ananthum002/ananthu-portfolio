@@ -276,6 +276,25 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+}
+
+.btn-secondary:hover {
+    background: rgba(0, 229, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
+    transform: translateY(-2px);
+}
+
 /* Hero Server Animation Visuals */
 .hero-visual {
     flex: 1;
@@ -553,13 +572,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact */
 .contact-content {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
-}
-
-.contact-content.single-column {
-    grid-template-columns: 1fr;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .email-link {
@@ -635,7 +649,65 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 8px 20px rgba(0, 119, 181, 0.4);
 }
 
+.contact-form {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
+.input-group { position: relative; }
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    background: var(--bg-dark);
+    border: 1px solid var(--bg-elevated);
+    border-radius: 8px;
+    padding: 1.2rem;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 1.2rem; top: 1.2rem;
+    color: var(--text-muted);
+    transition: var(--transition-fast);
+    pointer-events: none;
+    font-family: var(--font-heading);
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+}
+
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:not(:placeholder-shown) ~ label {
+    top: -0.6rem; left: 0.8rem;
+    font-size: 0.8rem;
+    background: var(--bg-surface);
+    padding: 0 0.4rem;
+    color: var(--primary);
+    border-radius: 4px;
+}
+
+.submit-btn { width: 100%; padding: 1.2rem; }
+
+.form-status { margin-top: 10px; text-align: center; }
+.status-success { color: var(--primary); font-weight: 500; }
 
 /* Footer */
 footer {
